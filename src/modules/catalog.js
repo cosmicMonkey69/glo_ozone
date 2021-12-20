@@ -20,8 +20,8 @@ const catalog = () => {
         
         catalogModalItems.forEach(item => {
             item.addEventListener('click', () => {
-                let value = item.textContent;
-                getData(value).then(data => renderGoods(categoryFilter(data, value)));
+                let value = item.textContent
+                getData(value).then(data => renderGoods(categoryFilter(data, value)))
             })
         })
     })
